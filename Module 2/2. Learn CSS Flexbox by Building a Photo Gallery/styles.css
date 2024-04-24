@@ -1,0 +1,49 @@
+/* Global box-sizing rule to include padding and borders in element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0; /* Remove default margin */
+    font-family: sans-serif; /* Set default font family */
+    background-color: #f5f6f7; /* Set background color */
+}
+
+/* Header styles */
+.header {
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center; /* Center-align text */
+    padding: 32px; /* Add padding */
+    background-color: #0a0a23; /* Set background color */
+    color: #fff; /* Set text color */
+    border-bottom: 4px solid #fdb347; /* Add bottom border */
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    padding: 20px 10px; /* Add padding */
+    max-width: 1400px; /* Set maximum width */
+    margin: 0 auto; /* Center the gallery horizontally */
+    gap: 16px; /* Add gap between gallery items */
+}
+
+/* Image styles */
+.gallery img {
+    width: 100%; /* Make images fill their container */
+    max-width: 350px; /* Set maximum width */
+    height: 300px; /* Set height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+/* Pseudo-element to clear float */
+.gallery::after {
+    content: ""; /* Add content */
+    width: 350px; /* Set width */
+}
