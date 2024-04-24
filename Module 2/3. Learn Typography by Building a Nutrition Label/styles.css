@@ -1,0 +1,159 @@
+/* Global box-sizing rule to include padding and borders in element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Base font size for better responsiveness */
+html {
+    font-size: 16px;
+}
+
+/* Body styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    /* Set default font family */
+}
+
+/* Styling for labels */
+.label {
+    border: 2px solid black;
+    /* Add border */
+    width: 270px;
+    /* Set width */
+    margin: 20px auto;
+    /* Center-align and add margin */
+    padding: 0 7px;
+    /* Add padding */
+}
+
+/* Header styles */
+header h1 {
+    text-align: center;
+    /* Center-align text */
+    margin: -4px 0 -4px 0;
+    /* Adjust margin */
+    letter-spacing: 0.15px;
+    /* Add letter spacing */
+}
+
+/* Paragraph styles */
+p {
+    margin: 0;
+    /* Reset default margin */
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space evenly between flex items */
+}
+
+/* Divider styles */
+.divider {
+    border-bottom: 1px solid #888989;
+    /* Add bottom border */
+    margin: 2px 0 2px 0;
+    /* Adjust margin */
+}
+
+/* Bold text styles */
+.bold {
+    font-weight: 800;
+    /* Set font weight */
+}
+
+/* Large and medium text styles */
+.large {
+    height: 10px;
+    /* Set height */
+}
+
+.large,
+.medium {
+    background-color: black;
+    /* Set background color */
+    border: 0;
+    /* Remove border */
+}
+
+/* Medium text styles */
+.medium {
+    height: 5px;
+    /* Set height */
+}
+
+/* Small text styles */
+.small-text {
+    font-size: 0.85rem;
+    /* Set font size */
+}
+
+/* Calories info container styles */
+.calories-info {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space evenly between flex items */
+    align-items: flex-end;
+    /* Align items at the bottom */
+}
+
+/* Heading styles within calories info */
+.calories-info h2 {
+    margin: 0;
+    /* Reset default margin */
+}
+
+/* Styles for paragraphs within the left container */
+.left-container p {
+    margin: -5px -2px -5px -2px;
+    /* Adjust margin */
+    font-size: 2em;
+    /* Set font size */
+    font-weight: 700;
+    /* Set font weight */
+}
+
+/* Styles for spans within the calories info */
+.calories-info span {
+    font-size: 2.4em;
+    /* Set font size */
+    font-weight: 700;
+    /* Set font weight */
+    margin: -7px -2px;
+    /* Adjust margin */
+}
+
+/* Right-aligned styles */
+.right {
+    justify-content: flex-end;
+    /* Align items to the right */
+}
+
+/* Indentation styles */
+.indent {
+    margin-left: 1em;
+    /* Add left indentation */
+}
+
+/* Double indentation styles */
+.double-indent {
+    margin-left: 2em;
+    /* Add double left indentation */
+}
+
+/* Daily value paragraph styles */
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+    /* Add bottom border */
+}
+
+/* Note styles */
+.note {
+    font-size: 0.6rem;
+    /* Set font size */
+    margin: 5px 0 5px 0;
+    /* Adjust margin */
+    padding: 0 8px 0 8px;
+    /* Add padding */
+    text-indent: -8px;
+    /* Indent text */
+}
