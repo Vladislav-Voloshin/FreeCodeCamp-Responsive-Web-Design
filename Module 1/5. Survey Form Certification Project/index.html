@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Your name:<input id="name" type="text" placeholder="Jack Dou" required></label>
+      <label for="email" id="email-label">Your email:<input id="email" type="email" placeholder="info@email.com" required></label>
+      <label for="number" id="number-label">Your age: <input type="number" id="number" min="12" max="120" placeholder="35" required ></label>
+      <label for="dropdown" id="survey-form">
+        <select id="dropdown">
+          <option value="0">Choose your role</option>
+          <option value="1">Developer</option>
+          <option value="2">Manager</option>
+          <option value="3">QA</option>
+        </select>
+      </label>
+      <fieldset id="recommendation-fieldset">
+        <legend>Would you recommend us?</legend>
+        <label for="recommendation-yes">
+          <input type="radio" id="recommendation-yes" name="recommendation" value="yes" checked>
+          Yes
+        </label>
+        <label for="recommendation-no">
+          <input type="radio" id="recommendation-no" name="recommendation" value="no">
+          No
+        </label>
+      </fieldset>
+      <label for="feedback" id="feedback-label">How can we improve?</label>
+      <label for="feedback-make-cheaper">
+        <input type="checkbox" id="feedback-make-cheaper" value="make cheaper"> Decrease the price
+      </label>
+      <label for="feedback-increase-quality">
+        <input type="checkbox" id="feedback-increase-quality" value="increase quality"> Improve material
+      </label>
+      <label for="comments" id="comments-label">Additional comments:
+        <textarea id="comments" placeholder="Please add your comments."></textarea>
+      </label>
+      <label for="submit" id="submit-label">
+        <input type="submit" id="submit">
+      </label>
+    </form>
+  </body>
+</html>
